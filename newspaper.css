@@ -1,0 +1,25 @@
+body
+    {background-color: cyan}
+h1
+    {color: blue;}
+
+h2
+    {text-align: center;}
+
+h3
+    {text-align: left;}
+p   
+    {font-weight: normal;
+    text-align: left;}
+
+.Silver{color: hsl(0, 0%, 75%)}
+.Fuchsia{color: #FF00FF;}
+.Bright-Orange{color:rgb(255,165,0);}
+
+.class{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.class2{
+    font-family: 'Courier New', Courier, monospace;
+}
