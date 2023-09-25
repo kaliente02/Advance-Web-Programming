@@ -1,0 +1,54 @@
+.Box1{
+    text-align: left;
+    font-style: italic;
+    background-color: blue;
+}
+.Box2{
+    font-family: Arial;
+    background-color: yellow;
+    position: absolute;
+    top: 8px;
+    right: 16px;     
+}
+.Box3{
+    border: dotted black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+.Box4{
+    color: green;
+    font-size: small;
+    background-color: lightcoral;
+    border: dashed thick;
+}
+.Box5{
+    text-align: center;
+    font-family: Verdana;
+    font-size: large;
+    font-style: oblique;
+}
+
+.B{color: red;}
+.O{color: orange;}
+.X{color: green;}
+.five{color:blue}
+
+.Box6{
+    display: inline-block;
+    background-color: purple;
+    top: 50%;
+    left: 40%;
+    position:absolute;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.Box7{
+    display: inline-block;
+    background-color: orangered;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
