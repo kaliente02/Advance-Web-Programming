@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+p{
+    border:4px dashed red;
+    text-align: left;
+    
+}
+.strike-through
+    {
+        text-decoration: line-through;
+        font-weight: bold;
+    }
+.gray-background
+{
+    background-color: gray;
+}
+.bold
+{
+    font-weight: bold;
+}
