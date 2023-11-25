@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KIMS CYRA RAYEL M. MORING">
+    <meta name="date" content="November 25, 2023">
+    <link rel="stylesheet" type="text/css" href="HTML-Structure-Moring.css" />
+ 
+    <title>Narcissistic personality disorder</title>
+
+</head>
+    <h1>Narcissistic personality disorder</h1> <br>
+
+    <form>
+        <label for="date">Current Date:</label>
+        <input type="text" id="date" name="date">
+    </form>
+    
+    <script>
+    
+        // Get the current date
+        
+        var today = new Date();
+        
+        // Format the date as YYYY-MM-DD
+        
+        var yyyy = today.getFullYear();
+        
+        var mm = today.getMonth() + 1;
+        
+        var dd = today.getDate();
+        
+        if (mm < 10) {
+        
+        mm = '0' + mm;
+        
+        }
+        
+        if (dd < 10) {
+        
+        dd = '0' + dd;
+        
+        }
+        
+        var formattedDate = yyyy + '-' + mm + '-' + dd;
+        
+        // Set the input element value to the formatted date
+        
+        document.getElementById('date').value = formattedDate;
+        
+</script>
+    <hr>
+<body>
+     <pre>
+        Narcissistic personality disorder is a mental health condition 
+        in which people have an unreasonably high sense of their own importance.
+        They need and seek too much attention and want people to admire them. 
+        People with this disorder may lack the ability to understand or care
+        about the feelings of others. But behind this mask of extreme confidence,
+        they are not sure of their self-worth and are easily upset by the slightest
+        criticism.
+
+        A narcissistic personality disorder causes problems in many areas of life,
+        such as relationships, work, school or financial matters. People with narcissistic
+        personality disorder may be generally unhappy and disappointed when they're not
+        given the special favors or admiration that they believe they deserve. They may 
+        find their relationships troubled and unfulfilling, and other people may not enjoy
+        being around them.
+
+        Treatment for narcissistic personality disorder centers around talk therapy,
+        also called psychotherapy.
+
+</body>
+
+<script type="text/javascript" src="HTML-Structure-Moring.js"></script>
+
+</html>
