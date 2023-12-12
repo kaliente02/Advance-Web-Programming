@@ -1,0 +1,542 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    background-image: url("x1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: violet;
+    
+}
+
+/*----------------------------------------------------------------HEADER----------------------------------------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+
+header .logo{
+    position: relative;
+    color: rgb(225, 149, 240);
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: 500;
+    font-family: 'Brush Script MT', cursive;
+    
+    
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin: 10px;
+    
+}
+
+header ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover{
+    background: #b066db;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+header .action .seachbox {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+}
+
+header .action .seachbox i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: #222;
+}
+
+header .action .seachbox input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+}
+
+/*----------------------------------------------------------------About----------------------------------------------------------*/
+.About{
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+
+
+.About .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About.bg .content{
+    width: 50%;
+    height: 100%;
+}
+
+
+.About .bg .content h2{
+    font-size: 4em;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.About .bg .content h6{
+    font-size: 2em;
+    color: turquoise;
+    letter-spacing: 20px;
+    font-family:cursive
+}
+
+.About .bg .content p{
+    color: white;
+    letter-spacing: 3px;
+    font: italic 1.2em "Fira Sans", serif;
+    
+}
+
+.About .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color:white;
+    letter-spacing: 1px;
+}
+
+.About .bg .content a:hover {
+    border-color: #ffffff;
+    background: #b066db;
+    color: gold;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.About .bg img{
+    height: 500px;
+    width: 400px;
+    margin-left: 5%;
+}
+
+/*----------------------------------------------------------------Achievements----------------------------------------------------------*/
+
+.Achievements{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.Achievements h2{
+    color: rgb(225, 149, 240);
+    margin: 10px 0;
+    font-size: 50px;
+    font-family: Lucida Handwriting, cursive;
+}
+
+.Achievements ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+}
+
+.Achievements ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    font-family: Bradley Hand, cursive;
+    font-size: 20px;
+}
+
+.Achievements ul li.active{
+    border-color: #ffffff;
+    background: plum;
+    color: #141313;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.Achievements .cardBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Achievements .cardBx .card{
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: rgba(238, 130, 238, 0.705);
+    overflow: hidden;
+}
+
+.Achievements .cardBx .card img{
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+}
+
+.Achievements .cardBx .card .content{
+    padding: 10px;
+}
+
+.Achievements .cardBx .card .content h4{
+    color: rgb(44, 2, 48);
+    margin: 15px 0;
+    font: Arial;
+    font-size: 10;
+}
+
+.Achievements .cardBx .card .info{
+    border-top: 2px solid purple;
+    padding: 5px;
+}
+
+.Achievements .cardBx .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border:  1px solid black;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.Achievements .cardBx .card .info a:hover{
+    border-color: #ffffff;
+    background: #b066db;
+    color: #141313;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.Achievements .cardBx .card.hide{
+    display: none;
+}
+
+/*----------------------------------------------------------------GOALS----------------------------------------------------------*/
+
+.Goals{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Goals h2{
+    color: rgb(225, 149, 240);
+    margin: 10px 0;
+    font-size: 50px;
+    font-family: Lucida Handwriting, cursive;
+}
+
+.Goals .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Goals .boxBx .box{
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background:rgba(238, 130, 238, 0.733);
+    overflow: hidden;
+}
+
+.Goals .boxBx .box img{
+    width:100%;
+    height: 450px;
+    object-fit: fill;
+}
+
+.Goals .boxBx .box .content{
+    padding: 10px;
+}
+
+.Goals .boxBx .box .content h4{
+    color: #fff;
+    margin-top: 15px;
+    
+}
+
+.Goals .boxBx .box .content h4 span{
+    color: purple;
+    font: Arial, ;
+    font-size: 30px;
+    
+}
+
+.Goals .boxBx .box .content p{
+    text-align: justify;
+    color: rgb(44, 2, 48);
+    margin-top: 10px;
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+.Goals .boxBx .box .content .belowbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Goals .boxBx .box .content .price{
+display: inline-block;
+padding: 10px 20px;
+margin: 20px 0;
+background:  #9510af;
+text-decoration: none;
+font-weight: 700;
+border-radius: 5px;
+color: #ffffff;
+letter-spacing: 1px;
+box-shadow: 0 0 10px #fff;
+}
+
+
+
+.Goals .boxBx .box .content .buy{
+display: inline-block;
+padding: 10px 20px;
+margin: 20px 0;
+border: 1px solid black;
+text-decoration: none;
+font-weight: 700;
+border-radius: 5px;
+color: #fff;
+letter-spacing: 1px;
+}
+    
+.Goals .boxBx .box .content .buy:hover{
+    border-color: #ffffff;
+    background: #b066db;
+    color: #141313;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+/*----------------------------------------------------------------CONTACT----------------------------------------------------------*/
+  
+.contact{
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.contact .form{
+    width: 50%;
+    margin: 30px;
+}
+
+.contact .form h1{
+    color: #fff;
+    font-family: Lucida Handwriting, cursive
+}
+
+.contact .form .inputBx{
+    margin-top: 10px 0;
+}
+
+.contact .form .inputBx p{
+    color: #fff;
+    
+}
+
+.contact .form .inputBx input,
+.contact .form .inputBx textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background: #1b2141;
+    min-height: 15px;
+    font-size: 1.1em;
+}
+
+.contact .form .inputBx textarea{
+    height: 150px;
+}
+
+.contact .form .inputBx input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fdfdfd;
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.contact .form .inputBx input[type="submit"]:hover{
+    border-color: #ffffff;
+    background: #b066db;
+    color: #141313;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+/*----------------------------------------------------------------FOOTER----------------------------------------------------------*/
+
+footer{
+    padding: 10px 100px;
+}
+
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info .logo{
+    position: relative;
+    color:#fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Brush Script MT', cursive;
+}
+
+footer .info p{
+    color: #dbd9d9;
+}
+
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aeeef;
+}
+
+footer .info ul li:hover{
+    border-color: #ffffff;
+    background: #b066db;
+    color: #141313;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+footer .info ul li a i{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+footer .info ul li:hover a i{
+    color: #050e2d;
+}
+
+.readX{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.readX.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
